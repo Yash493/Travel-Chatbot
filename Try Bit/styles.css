@@ -1,0 +1,53 @@
+body {
+    margin: 0;
+    background-image: url('6345959.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#myIframe {
+    align-self: center;
+    border: 10px solid #fff; /* Set the border properties */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Optional: Add a box shadow */
+    border-radius: 20px;
+} 
+
+.overlay-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.overlay-image {
+    position: absolute;
+    top: 175px;
+    right: 350px;
+    transform: translate(-50%, -50%);
+    width: 350px; /* Set the width of the overlay image */
+    height: 25px; /* Maintain the aspect ratio */
+    z-index: 1; /* Ensure the overlay is above the iframe content */
+}
+.btn {
+    margin-top: 35%;
+    text-align: center;
+}
+
+.btn input[type="button"] {
+    padding: 10px 20px;
+    background-color: black;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Add a smooth transition effect */
+}
+
+.btn input[type="button"]:hover {
+    background-color: #2980b9; /* Change the background color on hover */
+}
